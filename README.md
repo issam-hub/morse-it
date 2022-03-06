@@ -5,3 +5,6 @@ simple dimple morse code translator
 
 ## what i learned: 
 well little things about morse code haha
+
+### live demo: [morse it !](https://issam-hub.github.io/morse-it/)
+
