@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+}
+
+::selection {
+    color: white;
+    background-color: black;
+}
+body {
+    font-family: "Fredoka", sans-serif;
+    background-color: rgb(247, 242, 210);
+}
+
+.content {
+    height: 60vh;
+    width: max(300px, 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    letter-spacing: 1.5px;
+    user-select: none;
+}
+.input {
+    position: relative;
+    width: max(350px, 85%);
+    border-radius: 20px;
+    box-shadow: 0px 7px 10px 0 rgba(236, 225, 187, 0.466);
+    display: flex;
+}
+.input i {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+}
+input {
+    font-family: "Fredoka", sans-serif;
+    border: none;
+    font-size: 1.1rem;
+    padding: 15px;
+    width: 90%;
+    border-radius: 20px;
+    color: whitekkk;
+}
+input::placeholder {
+    color: rgb(209, 209, 209);
+}
+input:focus {
+    outline: none;
+}
+
+textarea {
+    font-family: "Fredoka", sans-serif;
+    resize: none;
+    width: max(350px, 95%);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    /* box-shadow: 0px 7px 10px 0 rgba(238, 228, 195, 0.466); */
+    box-shadow: 0px 7px 10px 0 rgba(236, 225, 187, 0.466);
+}
+textarea:focus {
+    outline: none;
+}
